@@ -1,7 +1,7 @@
 # Welcome
 This is my personal website, feel free to explore it.
 
-![My personal website](https://github.com/[PDFAtauchi]/[PDFAtauchi.github.io]/blob/[master]/screenshot_website.PNG?raw=true)
+![My personal website](https://github.com/PDFAtauchi/PDFAtauchi.github.io/blob/main/screenshot_website.PNG)
 
 # Resources used
 - [Base template](https://startbootstrap.com/theme/resume)
