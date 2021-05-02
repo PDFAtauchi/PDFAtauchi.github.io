@@ -1,6 +1,6 @@
 var visitedCountries = getVisitedCountries(trips);
 
-var container = d3.select("#container").node(),
+var container = d3.select("#container-map").node(),
     width = container.getBoundingClientRect().width,
     height = container.getBoundingClientRect().height,
     active = d3.select(null);
@@ -16,9 +16,10 @@ var zoom = d3.zoom().on("zoom", zoomed);
 var path = d3.geoPath()
     .projection(projection);
 
-var svg = d3.select("#container").append("svg")
+var svg = d3.select("#container-map").append("svg")
     .attr("width", width)
     .attr("height", height)
+    .attr("id", "svg-map")
     .attr("preserveAspectRatio", "xMaxYMax meet")
     .on("click", stopped, true);
 
@@ -33,17 +34,17 @@ var g = svg.append("g");
 svg
     .call(zoom);
 
-var tooltipCountry = d3.select("#container")
+var tooltipCountry = d3.select("#container-map")
     .append("div")
     .attr("class", "tooltip_country hidden")
     .style("z-index", "10");
 
-var tooltipPlace = d3.select("#container")
+var tooltipPlace = d3.select("#container-map")
     .append("div")
     .attr("class", "tooltip_place hidden")
     .style("z-index", "10");
 
-var tooltipPlaceCarousel = d3.select("#container")
+var tooltipPlaceCarousel = d3.select("#container-map")
     .append("div")
     .attr("class", "tooltip_place_carousel hidden")
     .style("z-index", "10");
