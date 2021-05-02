@@ -19,6 +19,7 @@ var path = d3.geoPath()
 var svg = d3.select("#container").append("svg")
     .attr("width", width)
     .attr("height", height)
+    .attr("preserveAspectRatio", "xMaxYMax meet")
     .on("click", stopped, true);
 
 svg.append("rect")
@@ -28,6 +29,9 @@ svg.append("rect")
     .on("click", reset);
 
 var g = svg.append("g");
+
+svg
+    .call(zoom);
 
 var tooltipCountry = d3.select("#container")
     .append("div")
@@ -111,8 +115,8 @@ function clicked(d) {
             .attr("y", function(location) {
                 return projection([location.lon, location.lat])[1];
             })
-            .attr("width", k / 4 + "px")
-            .attr("height", k / 4 + "px")
+            .attr("width", k / 3 + "px")
+            .attr("height", k / 3 + "px")
             .on("mouseover", showTooltipPlace)
             .on("mouseout", hideTooltipPlace)
             .on("click", showTooltipPlaceCarousel);
