@@ -8,15 +8,32 @@
     <meta name="author" content="" />
     <title>pdfatauchi</title>
     <link rel="icon" type="image/x-icon" href="assets/site/favicon.ico" />
+
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+
     <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--- CSS site--->
     <link href="css/site/styles.css" rel="stylesheet" />
     <link href="css/site/timeline.css" rel="stylesheet" />
+
+    <!-- Icones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+
+    <!--- CSS world map and places--->
+    <link rel="stylesheet" href="css/map/style.css">
+
 </head>
 
 <body id="page-top">
@@ -325,8 +342,7 @@
             <div class="resume-section-content">
                 <h2 class="mb-5">Knowing a little of the world!</h2>
 
-                <div>
-                    Working on it...... <i class="fas fa-cogs" aria-hidden="true"></i>
+                <div id="container" style="width:75%; height:500px;">
                 </div>
             </div>
         </section>
@@ -338,6 +354,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/site/scripts.js"></script>
+        <!-- Script world map -->
+        <script src="js/map/trips.js"></script>
+        <script src="js/map/utilities.js"></script>
+        <script src="js/map/script.js"></script>
 </body>
 
 </html>
