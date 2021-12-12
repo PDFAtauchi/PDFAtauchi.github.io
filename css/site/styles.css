@@ -10173,13 +10173,13 @@ p.lead {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: #495057;
     color: #fff;
     border-radius: 100%;
-    font-size: 1.2rem;
-    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    margin-right: 0;
 }
 
 .social-icons .social-icon:last-child {
