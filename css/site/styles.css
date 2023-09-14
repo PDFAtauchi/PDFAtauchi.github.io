@@ -172,9 +172,8 @@ sup {
 }
 
 a {
-    color: darkgray;
-    text-decoration: none;
-    background-color: transparent;
+    color: blue;
+    font-weight: 700;
 }
 
 a:hover {
